@@ -74,15 +74,13 @@ public class ChristmasSecretSanta
     public static void main(String[] a)
     {
     	final String[] participants =
-    			new String[] {"Fyroz", "Hari", "krupa", "Sreeneela", "Harish", "Ramu", "Vinay", "Dhanunjay"};
-    	
-    	System.out.println("Assigning" +Arrays.toString(participants));
+    			new String[] {"Fyroz", "Hari", "krupa", "Sreeneela", "Harish", "Ramu", "Vinay", "Dhanunjay", "Kondayya"};
     	
     	final String[] assignments= new ChristmasSecretSanta().PopAssignments(participants);
     			
     	for (int i=0; i<assignments.length; i++)
     	{
-    		System.out.println("Assigned " +assignments[i]);
+    		System.out.println(participants[i]+ "->" +assignments[i]);
     		if(assignments[i].equals(participants[i]))
     		{
     			System.out.println("Error: " +assignments[i]);
