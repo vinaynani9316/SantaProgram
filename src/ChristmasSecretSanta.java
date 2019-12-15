@@ -70,30 +70,25 @@ public class ChristmasSecretSanta
 	  }
 	  return true;
   }
+  
     public static void main(String[] a)
     {
-    	Scanner particpate= new Scanner(System.in);
-    	System.out.println("Enter the names");
-    	System.out.println("Enter assigned");
-    	String l= particpate.next();
-    	String s= particpate.next();
-    	
     	final String[] participants =
-    			new String[] {l};
+    			new String[] {"Fyroz", "Hari", "krupa", "Sreeneela", "Harish", "Ramu", "Vinay", "Dhanunjay"};
     	
+    	System.out.println("Assigning" +Arrays.toString(participants));
     	
-    	final String[] assignments= new String[] {s};
-    	new ChristmasSecretSanta().PopAssignments(participants);
+    	final String[] assignments= new ChristmasSecretSanta().PopAssignments(participants);
     			
     	for (int i=0; i<assignments.length; i++)
     	{
-    		System.out.println(assignments[i]);
+    		System.out.println("Assigned " +assignments[i]);
     		if(assignments[i].equals(participants[i]))
     		{
     			System.out.println("Error: " +assignments[i]);
     		}
     	}
-    	particpate.close();
+    	
     }
    
  }
